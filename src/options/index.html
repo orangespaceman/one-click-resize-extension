@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>One-click resize options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ie6.1.b.css">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body class="chrome-bootstrap">
+    <main class="wrapper">
+        <header>
+            <h1>One-click resize options</h1>
+        </header>
+
+        <h2>Resize your browser to a default size with a single click</h2>
+
+        <p>Set your default browser dimensions here. You will be directed here the first time you use the extension, at which point your default browser dimensions will be saved.</p>
+        <p>If you want to change your saved preferences at a later date, you can find a link to this options page on the Chrome extensions page.</p>
+
+        <hr>
+
+        <form>
+            <p class="settings width">
+                <label for="width">Width: </label>
+                <input type="text" id="width">
+            </p>
+            <p class="settings height">
+                <label for="height">Height: </label>
+                <input type="text" id="height">
+            </p>
+            <p class="settings left">
+                <label for="left">Left: </label>
+                <input type="text" id="left">
+            </p>
+            <p class="settings top">
+                <label for="top">Top: </label>
+                <input type="text" id="top">
+            </p>
+            <p>
+                <a class="js-current-values" href="#">Update values to current browser dimensions</a>
+            </p>
+            <p>
+                <button class="js-save-btn">Save</button>
+                <em class="saved-note js-saved-note">Saved...</em>
+            </p>
+        </form>
+
+        <p><em>NB: there is no validation, entering incorrect values could break the extension</em></p>
+
+        <hr>
+        <h2>Github</h2>
+        <p>The code for this extension is available on github: <a href="https://github.com/thegingerbloke/one-click-resize-extension">github.com/thegingerbloke/one-click-resize-extension</a></p>
+    </main>
+    <script src="options.js"></script>
+</body>
+</html>

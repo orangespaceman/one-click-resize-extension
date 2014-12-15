@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "One-click Resize",
+  "version": "0.1.0",
+  "description": "Resize your browser to a default size with a single click",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "options_page": "options/index.html"
+}
